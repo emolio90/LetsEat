@@ -25,6 +25,7 @@
 		53F64BD62412D007007E4BE4 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F64BD52412D007007E4BE4 /* LocationViewController.swift */; };
 		53F64BD82412D2DB007E4BE4 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53F64BD72412D2DB007E4BE4 /* Locations.plist */; };
 		53F64BDA2412D59B007E4BE4 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F64BD92412D59B007E4BE4 /* LocationDataManager.swift */; };
+		53F84D4C2416989700AF3042 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F84D4B2416989700AF3042 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		53F64BD52412D007007E4BE4 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		53F64BD72412D2DB007E4BE4 /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
 		53F64BD92412D59B007E4BE4 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
+		53F84D4B2416989700AF3042 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				53146649241500350059826B /* Model */,
+				53F84D4B2416989700AF3042 /* MapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				53024C7E240FC6F900D08D47 /* AppDelegate.swift in Sources */,
 				53024C98240FE55E00D08D47 /* RestaurantListViewController.swift in Sources */,
 				53024C80240FC6F900D08D47 /* SceneDelegate.swift in Sources */,
+				53F84D4C2416989700AF3042 /* MapViewController.swift in Sources */,
 				53024C95240FD1B000D08D47 /* ExploreViewController.swift in Sources */,
 				535F0DFF24127FEE0036D39B /* ExploreDataManager.swift in Sources */,
 				53936F542412A41200425172 /* ExploreCell.swift in Sources */,

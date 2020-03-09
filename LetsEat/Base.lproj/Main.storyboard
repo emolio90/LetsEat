@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="KuJ-bz-Uav">
             <objects>
-                <viewController id="Ija-Ys-L5w" sceneMemberID="viewController">
+                <viewController id="Ija-Ys-L5w" customClass="MapViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fO3-sW-u0b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,6 +31,9 @@
                         <viewLayoutGuide key="safeArea" id="tsP-LC-83Q"/>
                     </view>
                     <navigationItem key="navigationItem" id="U66-m4-Lfl"/>
+                    <connections>
+                        <outlet property="mapView" destination="4gw-XY-Ga0" id="Tvq-km-EgY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayw-1D-Bvv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
