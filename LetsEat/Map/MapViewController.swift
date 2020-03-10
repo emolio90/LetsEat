@@ -37,6 +37,18 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         guard !annotation.isKind(of: MKUserLocation.self) else { return nil }
         var annotationView: MKAnnotationView?
         
-        if let customAnnotationView = mapView.deque
+        if let customAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) {
+            annotationView = customAnnotationView
+            annotationView?.annotation = annotation
+        } else {
+            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            annotationView = av
+        }
+        if let annotationView = annotationView {
+            annotationView.canShowCallout = true
+            annotationView.image = UIImage(named: "custom-annotation")
+        }
+        return annotationView
     }
 }
